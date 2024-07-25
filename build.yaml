@@ -1,6 +1,6 @@
 include:
   - board: corneish_zen_v2_left
-      shield: settings_reset
+    shield: settings_reset
   - board: corneish_zen_v2_right
-      shield: settings_reset
+    shield: settings_reset
 
