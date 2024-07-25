@@ -1,4 +1,5 @@
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -26,7 +27,7 @@
 &kp ESCAPE     &kp Q  &kp W  &kp E         &kp R         &kp T          &kp Y        &kp U            &kp I      &kp O    &kp P     &kp NON_US_BACKSLASH
 &mt LCTRL TAB  &kp A  &kp S  &kp D         &kp F         &kp G          &kp H        &kp J            &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHFT      &kp Z  &kp X  &kp C         &kp V         &kp B          &kp N        &kp M            &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-                             &kp LEFT_ALT  &kp LEFT_WIN  &lt 1 SPACE    &lt 1 ENTER  &lt 2 BACKSPACE  &mo 0
+                             &kp LEFT_ALT  &kp LEFT_WIN  &lt 1 SPACE    &lt 1 ENTER  &lt 2 BACKSPACE  &mo 3
             >;
         };
 
@@ -66,10 +67,10 @@
 
         layer_3 {
             bindings = <
-&none  &none  &none  &none  &none  &none    &none     &none     &none   &none      &none  &none
-&none  &none  &none  &none  &none  &none    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none  &none
-&none  &none  &none  &none  &none  &none    &none     &none     &none   &none      &none  &none
-                     &none  &none  &none    &none     &none     &none
+&none  &none           &none         &none       &none       &none    &none     &none     &none   &none      &none  &none
+&none  &bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_PRV  &bt BT_NXT  &none    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none  &none
+&none  &none           &none         &none       &none       &none    &none     &none     &none   &none      &none  &none
+                                     &none       &none       &none    &none     &none     &none
             >;
 
             label = "NAVMOV";
