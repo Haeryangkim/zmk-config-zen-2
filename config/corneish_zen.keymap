@@ -19,7 +19,7 @@
 
         ToSyslayer {
             bindings = <&mo 4>;
-            key-positions = <36 41>;
+            key-positions = <38 39>;
         };
     };
 
