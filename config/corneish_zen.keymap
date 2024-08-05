@@ -32,7 +32,7 @@
         arcsearch: arcsearch {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_COMMAND &kp LEFT_ALT &kp SPACE>;
+            bindings = <&kp LEFT_COMMAND &kp LEFT_ALT &kp N>;
             label = "ARCSEARCH";
         };
     };
